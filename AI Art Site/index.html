@@ -12,6 +12,7 @@
 </head>
 <body>
     <!-- Navigation -->
+    <section id="navigation">
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">AI Art Gallery</a>
@@ -22,13 +23,13 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
+                    <a href="#navigation" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/gallery.html" class="navbar__links">Explore</a>
+                    <a href="#images" class="navbar__links">Explore</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Gallery</a>
+                    <a href="#images" class="navbar__links">Gallery</a>
                 </li>
                 <li class="navbar__button">
                     <a href="/" class="button">Sign Up</a>
@@ -36,6 +37,7 @@
             </ul>
         </div>
     </nav>
+    </section>
 
     <!-- Main -->
     <div class="main">
@@ -43,7 +45,7 @@
             <div class="main__content">
                 <h1>Discover <span class="text-highlight">the Breathtaking Art made by </span>Artificial Intelligence</h1>
                 <p>Created by Midjourney AI</p>
-                <button class="main__button"><a href="#">View images</a></button>
+                <button class="main__button"><a href="#images">View images</a></button>  
             </div>
             <div class="main__img--container">
                 <img src="images/main-image.jpg" alt="cat" id="main__img"/>
@@ -52,6 +54,7 @@
     </div>
 
     <!-- Images -->
+    <section id="images">
     <div class="images">
         <h1>Get ready to be amazed!</h1>
         <div class="images__container">
@@ -93,6 +96,7 @@
             </div>
         </div>
     </div>
+    </section>
 
     <!-- Footer -->
     <div class="footer__container">
