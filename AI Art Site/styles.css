@@ -5,6 +5,13 @@
     font-family: 'Prompt', sans-serif;
 }
 
+.text-highlight span {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+
 .navbar {
     background:#141414;
     height: 80px;
@@ -39,6 +46,7 @@
 }
 
 .navbar__menu {
+    
     display: flex;
     align-items: center;
     list-style: none;
@@ -192,6 +200,8 @@
     background-color: #141414;
 }
 
+
+
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -266,11 +276,19 @@
 
 
 #main__img {
+    position: relative;
     height: 600px;
     width: 600px;
     border-radius: 5%;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+#main__img.show {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 
 
 /* mobile rwd */
